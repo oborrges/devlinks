@@ -6,7 +6,7 @@
 
 :root{
   --text-color: #ffffff;
-  --bg-url: url(./assets/bg-mobile.jpg.png);
+  --bg-url: url(./assets/bg-mobile.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --highlight-color: rgba(255, 255, 255, 0.2);
@@ -25,6 +25,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -155,4 +156,15 @@ footer {
 footer .heart {
   color: rgb(112, 27, 91);
   font-size: 14px;
+}
+
+/* MIDIA QUERIES */
+@media (min-width: 700px) {
+ :root {
+  --bg-url: url(./assets/bg-desktop.jpg);
+ }
+
+ .light {
+  --bg-url: url(./assets/bg-desktop-light.jpg);
+ }
 }
